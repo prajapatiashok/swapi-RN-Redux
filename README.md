@@ -10,8 +10,8 @@
 
   The app is fully developed with the react-native-cli. 
   
-  In order to install the app in your emulator or in simulator, clone the project and run <b>npm install</b>.
-  After installing npm packages, go to the root directory of the project and run <b>react-native run-android</b> for ANDROID and <b>react-native run-ios</b> for IOS.
+  In order to install the app in your emulator or in simulator, clone the project, go to the root directory of the project and run <b>npm install</b>.
+  After installing npm packages run <b>react-native run-android</b> for ANDROID and <b>react-native run-ios</b> for IOS.
   
 ### App Screen
   <div>
