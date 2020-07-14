@@ -126,9 +126,7 @@ const styles = StyleSheet.create({
         fontWeight:'bold'
     },
     nestedTextStyle: {
-        fontSize: 15,
-        borderBottomColor: 'grey',
-        borderBottomWidth: 3
+        fontSize: 15
     }
 })
 
