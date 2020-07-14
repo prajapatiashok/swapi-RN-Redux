@@ -13,10 +13,7 @@
   In order to install the app in your emulator or in simulator, clone the project and run <b>npm install</b>.
   After installing npm packages, go to the root directory of the project and run <b>react-native run-android</b> for ANDROID and <b>react-native run-ios</b> for IOS.
   
-  
-  ###App Screen(VIDEO)
+### App Screen
   <div>
-  <video width="320" height="240" controls>
-    <source src="./blob/swapi.webm" type="video/webm">
-  </video>
+  <img src="./blob/swapi.gif" alt="Login Screen" width="250" height="400">
   </div>
