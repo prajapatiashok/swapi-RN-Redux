@@ -22,13 +22,7 @@ const PeopleScreen = ({resourceDetail, FetchResourceDatail}) => {
                 <TouchableOpacity onPress={() => FetchResourceDatail(resourceDetail.homeworld)}>
                     <Text style={styles.textStyle}>HomeWorld</Text>
                 </TouchableOpacity>
-
-                {
-                   resourceDetail.films.length >= 1 ?  
-                   <Text style={styles.textStyle}>Films: </Text>
-                   : null
-                }
-                
+                <Text style={styles.textStyle}>Films: </Text>
             </View>
         )
     }
@@ -52,11 +46,8 @@ const PeopleScreen = ({resourceDetail, FetchResourceDatail}) => {
                 }}
             />
 
-            {
-                resourceDetail.vehicles.length >= 1 ?  
-                <Text style={styles.textStyle}>Vehicles: </Text>
-                : null
-            }
+            
+            <Text style={styles.textStyle}>Vehicles: </Text>
             <FlatList
                 data={resourceDetail.vehicles}
                 keyExtractor={(item,index) => { return index.toString()}}
@@ -72,11 +63,8 @@ const PeopleScreen = ({resourceDetail, FetchResourceDatail}) => {
                 }}
             />
            
-            {
-                resourceDetail.starships.length >= 1 ?  
-                <Text style={styles.textStyle}>Starships: </Text>
-                : null
-            }
+            
+            <Text style={styles.textStyle}>Starships: </Text>
             <FlatList
                 data={resourceDetail.starships}
                 keyExtractor={(item,index) => { return index.toString()}}
@@ -92,28 +80,20 @@ const PeopleScreen = ({resourceDetail, FetchResourceDatail}) => {
                 }}
             />
             
-            <View>
-            
-            {
-                resourceDetail.species.length >= 1 ?  
-                <Text style={styles.textStyle}>Species: </Text>
-                : null
-            }
-                <FlatList
-                    data={resourceDetail.species}
-                    keyExtractor={(item,index) => { return index.toString()}}renderItem={({index, item}) => {
-                        return(
-                            <TouchableOpacity onPress={() => FetchResourceDatail(item)}>
-                                <View style={{flexDirection: "row", marginLeft: 15}}>
-                                    <Entypo name="dot-single" size={24} color="black" />
-                                    <Text style={styles.nestedTextStyle}>Species</Text>
-                                </View>
-                            </TouchableOpacity>
-                        );
-                    }}
-                />
-            </View>
-            
+            <Text style={styles.textStyle}>Species: </Text>
+            <FlatList
+                data={resourceDetail.species}
+                keyExtractor={(item,index) => { return index.toString()}}renderItem={({index, item}) => {
+                    return(
+                        <TouchableOpacity onPress={() => FetchResourceDatail(item)}>
+                            <View style={{flexDirection: "row", marginLeft: 15}}>
+                                <Entypo name="dot-single" size={24} color="black" />
+                                <Text style={styles.nestedTextStyle}>Species</Text>
+                            </View>
+                        </TouchableOpacity>
+                    );
+                }}
+            />
         </View>
     );
 }

@@ -18,11 +18,7 @@ const PlanetScreen = ({resourceDetail, FetchResourceDatail}) => {
                 <Text style={styles.textStyle}>Population: {resourceDetail.population}</Text>
                 <Text style={styles.textStyle}>Created At: {resourceDetail.created}</Text>
                 <Text style={styles.textStyle}>Edited At: {resourceDetail.edited}</Text>
-                {
-                   resourceDetail.residents.length >= 1 ?  
-                   <Text style={styles.textStyle}>Residents: </Text>
-                   : null
-                }
+                <Text style={styles.textStyle}>Residents: </Text>
             </View>
         )
     }

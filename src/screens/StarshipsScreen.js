@@ -47,11 +47,8 @@ const StarshipsScreen = ({ resourceDetail, FetchResourceDatail }) => {
                         );
                     }}
                 />
-                {
-                    resourceDetail.films.length >= 1 ?  
-                    <Text style={styles.textStyle}>Films: </Text>
-                    : null
-                }
+                
+                <Text style={styles.textStyle}>Films: </Text>
                 <FlatList
                     data={resourceDetail.films}
                     keyExtractor={(item,index) => { return index.toString()}}

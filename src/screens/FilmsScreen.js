@@ -39,11 +39,8 @@ const FilmsScreen = ({ resourceDetail, FetchResourceDatail }) => {
                         );
                     }}
                 />
-                {
-                    resourceDetail.planets.length >= 1 ?  
-                    <Text style={styles.textStyle}>Planets: </Text>
-                    : null
-                }
+                
+                <Text style={styles.textStyle}>Planets: </Text>
                 <FlatList
                     data={resourceDetail.planets}
                     keyExtractor={(item,index) => { return index.toString()}}
@@ -59,11 +56,7 @@ const FilmsScreen = ({ resourceDetail, FetchResourceDatail }) => {
                     }}
                 />
 
-                {
-                    resourceDetail.starships.length >= 1 ?  
-                    <Text style={styles.textStyle}>StarShips: </Text>
-                    : null
-                }
+                <Text style={styles.textStyle}>StarShips: </Text>
                 <FlatList
                     data={resourceDetail.starships}
                     keyExtractor={(item,index) => { return index.toString()}}
@@ -80,11 +73,8 @@ const FilmsScreen = ({ resourceDetail, FetchResourceDatail }) => {
                 
                 />  
 
-                {
-                    resourceDetail.vehicles.length >= 1 ?  
-                    <Text style={styles.textStyle}>Vehicles: </Text>
-                    : null
-                }
+                
+                <Text style={styles.textStyle}>Vehicles: </Text>
                 <FlatList
                     data={resourceDetail.vehicles}
                     keyExtractor={(item,index) => { return index.toString()}}
@@ -100,11 +90,8 @@ const FilmsScreen = ({ resourceDetail, FetchResourceDatail }) => {
                     }}
                 />
 
-                {
-                    resourceDetail.species.length >= 1 ?  
-                    <Text style={styles.textStyle}>Species: </Text>
-                    : null
-                }
+               
+                <Text style={styles.textStyle}>Species: </Text>
                 <FlatList
                     data={resourceDetail.species}
                     keyExtractor={(item,index) => { return index.toString()}}
